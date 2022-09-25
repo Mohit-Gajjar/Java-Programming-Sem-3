@@ -1,3 +1,4 @@
+
 // A typical mobile number in India is “+91-AA-BBB-CCCCC”. Where the first two digits (AA)
 // indicate a mobile system operator, the next three (BBB) denote the mobile switching code
 // (MSC) while the remaining five digits (CCCCC) are unique to the subscriber. Write an
@@ -9,26 +10,31 @@
 // MSC is 999
 // Unique code is 65789
 import java.util.Scanner;
+
 class Practical2 {
     public static void main(String[] args) {
-       try (Scanner sc = new Scanner(System.in)) {
-        System.out.print("Enter the mobile number in '+91-AA-BBB-CCCCC' format: ");
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter the mobile number in '+91-AA-BBB-CCCCC' format: ");
             String number = sc.next();
-            if(number.length() ==  16){
+            if (number.length() == 16) {
                 Generate g = new Generate();
                 g.generate(number);
-                
-            }else {
+
+            } else {
                 System.out.println("Invalid number!!");
             }
+        }
+
     }
-       
-    }
-    
+
 }
-class Generate{
-    void generate(String number){
-        String[] systemOperator  = number.split("-", 3);
-        System.out.println(systemOperator);
+
+class Generate {
+    void generate(String number) {
+        String[] systemOperator = number.split("-", 4);
+        System.out.println("Mobile System Operator: " + systemOperator[1].replace("+", ""));
+        System.out.println("MSC: " + systemOperator[2]);
+        System.out.println("Unique code: " + systemOperator[3]);
+
     }
 }
