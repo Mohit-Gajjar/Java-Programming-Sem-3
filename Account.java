@@ -6,12 +6,12 @@ public class Account {
     private double annualInterestRate = 0.07;
     private Date dateCreated;
 
-    Account(String i) {
-        this.id = i;
-        balance = 500;
-        annualInterestRate = 0.07;
-        dateCreated = new Date();
-    }
+    // Account(String i) {
+    // this.id = i;
+    // balance = 500;
+    // annualInterestRate = 0.07;
+    // dateCreated = new Date();
+    // }
 
     public String getId() {
         return id;
@@ -21,12 +21,24 @@ public class Account {
         return balance;
     }
 
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
     public Date getDateCreated() {
         return dateCreated;
     }
 
+    public void setDate(Date date) {
+        this.dateCreated = date;
+    }
+
     public double getAnnualInterestRate() {
         return annualInterestRate;
+    }
+
+    public void setAnnualInterestedRate(double annualInterestRate) {
+        this.annualInterestRate = annualInterestRate;
     }
 
     public double getMonthlyInterestRate() {
@@ -43,5 +55,12 @@ public class Account {
 
     public void deposit(double balance) {
         this.balance = balance;
+    }
+
+    @Override
+    public String toString() {
+
+        return "Account ID: " + id + "\n" + "Balance: " + getBalance() + "\n" + "Date Created: " + getDateCreated()
+                + "\n"+ "Annual Interest Rate: " + getMonthlyInterest();
     }
 }
