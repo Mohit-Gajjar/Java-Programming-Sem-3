@@ -12,7 +12,7 @@ package Part1.Practical2;
 // Unique code is 65789
 import java.util.Scanner;
 
-class Practical2 {
+class Main {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             System.out.print("Enter the mobile number in '+91-AA-BBB-CCCCC' format: ");

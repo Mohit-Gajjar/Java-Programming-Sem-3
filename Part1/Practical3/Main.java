@@ -5,7 +5,7 @@
 // firstDigit(31, 311) → true
 package Part1.Practical3;
 
-public class Practical3 {
+public class Main {
     static boolean firstDigit(int a, int b) {
         if (findfirstDigit(a) == findfirstDigit(b)) {
             return true;

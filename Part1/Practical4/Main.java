@@ -20,7 +20,7 @@
 
 package Part1.Practical4;
 
-public class Practical4 {
+public class Main {
 
     public static void main(String[] args) {
         char[][] studentAnswers = {

@@ -10,9 +10,8 @@ package Part1.Practical5;
 
 import java.util.Scanner;
 
-import Part1.Practical5.Practical5.MakeTriangle;
 
-public class Practical5 {
+public class Main {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.print("Enter no of rows: ");
