@@ -6,7 +6,6 @@ public class Part3Practical2Main {
         Vector<VectorConcrete> vector = new Vector<VectorConcrete>();
         for (int i = 0; i < 5; i++) {
             VectorConcrete vectorConcrete = new VectorConcrete();
-
             vector.add(vectorConcrete);
         }
 
