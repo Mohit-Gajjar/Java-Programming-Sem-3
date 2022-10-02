@@ -3,7 +3,7 @@
 // firstDigit(7, 71) → true
 // firstDigit(6, 17) → false
 // firstDigit(31, 311) → true
-package Part1;
+package Part1.Practical3;
 
 public class Practical3 {
     static boolean firstDigit(int a, int b) {
