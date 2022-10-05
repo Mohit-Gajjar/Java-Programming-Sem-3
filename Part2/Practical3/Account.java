@@ -1,19 +1,21 @@
+package Part2.Practical3;
+
 import java.util.Date;
 
 public class Account {
-    private String id = "AC000";
+    private int id = 0;
     private double balance = 300;
     private double annualInterestRate = 0.07;
     private Date dateCreated;
 
-    // Account(String i) {
-    // this.id = i;
-    // balance = 500;
-    // annualInterestRate = 0.07;
-    // dateCreated = new Date();
-    // }
+    public Account(int i) {
+        this.id = i;
+        balance = 500;
+        annualInterestRate = 0.07;
+        dateCreated = new Date();
+    }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
@@ -50,17 +52,17 @@ public class Account {
     }
 
     public void widhraw(double balance) {
-        this.balance = balance;
+        this.balance -= balance;
     }
 
     public void deposit(double balance) {
-        this.balance = balance;
+        this.balance += balance;
     }
 
-    @Override
-    public String toString() {
-
-        return "Account ID: " + id + "\n" + "Balance: " + getBalance() + "\n" + "Date Created: " + getDateCreated()
-                + "\n"+ "Annual Interest Rate: " + getMonthlyInterest();
-    }
+    // @Override
+    // public String toString() {
+    // return "Account ID: " + id + "\n" + "Balance: " + getBalance() + "\n" + "Date
+    // Created: " + getDateCreated()
+    // + "\n" + "Annual Interest Rate: " + getMonthlyInterest();
+    // }
 }
