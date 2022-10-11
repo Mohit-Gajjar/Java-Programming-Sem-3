@@ -1,21 +1,21 @@
-package Part2.Practical3;
+package Part2.Practical4;
 
 import java.util.Date;
 
 public class Account {
-    private String id = "AC000";
+    private int id = 0;
     private double balance = 300;
     private double annualInterestRate = 0.07;
     private Date dateCreated;
 
-    public Account(String i) {
+    public Account(int i) {
         this.id = i;
-        balance = 300;
+        balance = 500;
         annualInterestRate = 0.07;
         dateCreated = new Date();
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
